@@ -1,0 +1,22 @@
+.cadre_entier{
+    background-color: cornsilk;
+}
+.moi{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.entete{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: nowrap;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+.texte{
+    padding-left: 10px;
+}
