@@ -6,8 +6,8 @@
     margin-left: 16%;
     margin-right: 16%;
 }
-.moi{
-    padding-left: 10px;
+#moi{
+    padding-left: 20px;
     padding-top: 16px;
 }
 .entete{
@@ -20,13 +20,12 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.titre{
+.ml4{
     text-align: center;
     padding-bottom: 20px;
-    text-decoration: underline;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.nom_prenom{
+.ml11{
     float: right;
     padding-right: 20px;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,15 +36,18 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2{
-    text-decoration: underline;
     padding-bottom: 20px;
     padding-top: 20px;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: underline rgb(212, 172, 119);
 }
 .info{
     display: flex;
     justify-content: right;
+    align-items: flex-start;
+    flex-direction: row;
     padding-right: 20px;
+    padding-top: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .comp_perso{
@@ -53,4 +55,207 @@ h2{
     float: right;
     padding-right: 20px;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.popup {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: right;
+    align-items: flex-start;
+    padding-right: 25px;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: cornsilk;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+    padding: 1px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 86%;
+    margin-left: -80px;
+}
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+.ml14 {
+    font-weight: 200;
+    font-size: 2em;
+    font-weight: bold;
+}
+.ml14 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml14 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+.ml14 .letter {
+    display: inline-block;
+    line-height: 1.5em;
+}
+.ml11 {
+    font-weight: 700;
+    font-size: 2em;
+}
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    transform-origin: 0 50%;
+    background-color: burlywood;
+}
+.ml11 .line1 { 
+    top: 0; 
+    left: 0;
+}
+.ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+.ml15 {
+    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ml15 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml15 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+.ml15 .letter {
+    display: inline-block;
+    line-height: 1.5em;
+}
+.ml16 {
+    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ml16 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml16 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+.ml16 .letter {
+    display: inline-block;
+    line-height: 1.5em;
+}
+.ml17 {
+    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ml17 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml17 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+.ml17 .letter {
+    display: inline-block;
+    line-height: 1.5em;
+}
+.ml18 {
+    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.ml18 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+.ml18 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    transform-origin: 100% 100%;
+    bottom: 0;
+}
+.ml18 .letter {
+    display: inline-block;
+    line-height: 1.5em;
 }
