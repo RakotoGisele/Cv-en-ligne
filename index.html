@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cadre_entier">
+        <div class="en_tete">
+            <h1 class="ml11">
+                <span class="text-wrapper">
+                  <span class="line line1"></span>
+                  <span class="letters">Gisèle RAKOTOARIVONY</span>
+                </span>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script>
+                var textWrapper = document.querySelector('.ml11 .letters');
+                textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+                anime
+                .timeline({loop: true})
+                .add({
+                targets: '.ml11 .line',
+                scaleY: [0,1],
+                opacity: [0.5,1],
+                easing: "easeOutExpo",
+                duration: 700
+                })
+                .add({
+                targets: '.ml11 .line',
+                translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+                easing: "easeOutExpo",
+                duration: 700,
+                delay: 100
+                })
+                .add({
+                targets: '.ml11 .letter',
+                opacity: [0,1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=775',
+                delay: (el, i) => 34 * (i+1)
+                })
+                .add({
+                targets: '.ml11',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+                });
+        </script>
+            <img class="moi" src="https://zupimages.net/up/20/36/8geh.jpg" alt="image_de_pocahontas" width="120" height="140">
+            <p class="info">
+                <em><strong>
+                <div class="popup" onclick="myFunction()">Afficher les coordonées <br/>
+                    <span class="popuptext" id="myPopup">Vous pouvez à présent me contacter.<br/>
+                    &#x2709; 120 Chemin burel, <br/>97432, Ravine des cabris </br>
+                    &#x2706; 06.93.99.09.63 <br/>
+                    &#x1F4E7; rakotogisele-pro@outlook.fr <br/>
+                    </span>
+                </div>
+                </em></strong>
+                <script>
+                    function myFunction() {
+                      var popup = document.getElementById("myPopup");
+                      popup.classList.toggle("show");
+                    }
+                </script>
+                </p>
+            </div>
+            <h1 class="ml14">
+                <span class="text-wrapper">
+                <span class="letters">Formation de développeur web et web mobile</span>
+                <span class="line"></span>
+                </span>
+            </h1>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                  <script>
+                    var textWrapper = document.querySelector('.ml14 .letters');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                    anime.timeline({loop: false})
+                    .add({
+                    targets: '.ml14 .line',
+                    scaleX: [0,1],
+                    opacity: [0.5,1],
+                    easing: "easeInOutExpo",
+                    duration: 900
+                    })
+                    .add({
+                    targets: '.ml14 .letter',
+                    opacity: [0,1],
+                    translateX: [40,0],
+                    translateZ: 0,
+                    scaleX: [0.3, 1],
+                    easing: "easeOutExpo",
+                    duration: 800,
+                    offset: '-=600',
+                    delay: (el, i) => 150 + 25 * i
+                    })
+                    .add({
+                    targets: '.ml14',
+                    duration: 1000,
+                    easing: "easeOutExpo",
+                    delay: 1000
+                    });
+                </script>
+                <div class="texte">
+                    <ul>
+                        <h2 class="ml15">
+                        <span class="text-wrapper">
+                        <span class="letters">Expérience professionnelles</span>
+                        <span class="line"></span>
+                        </span>
+                        </h2>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                            var textWrapper = document.querySelector('.ml15 .letters');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                            anime.timeline({loop: false})
+                            .add({
+                            targets: '.ml15 .line',
+                            scaleX: [0,1],
+                            opacity: [0.5,1],
+                            easing: "easeInOutExpo",
+                            duration: 900
+                            })
+                            .add({
+                            targets: '.ml15 .letter',
+                            opacity: [0,1],
+                            translateX: [40,0],
+                            translateZ: 0,
+                            scaleX: [0.3, 1],
+                            easing: "easeOutExpo",
+                            duration: 800,
+                            offset: '-=600',
+                            delay: (el, i) => 150 + 25 * i
+                            })
+                            .add({
+                            targets: '.ml15',
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                            });
+                        </script>
+                        <p>
+                            <li>2020 : Volontaire stagiaire au Régiment du service militaire adaptée de la Réunion (en cours), <br/>
+                            Apprenante au sein de la formation de développeur web et web mobile proposée par Simplon.co (en cours)</li>
+                            <li>2019 : Vendeuse indépendante pour la marque Akéo</li>
+                            <li>2013/2014 : Stage de 5 jours en tant que secrétaire à l'Auto-école Bernard</li>
+                        </p>
+                    </ul>     
+                    <ul>
+                        <h2 class="ml16">
+                            <span class="text-wrapper">
+                            <span class="letters">Compétences</span>
+                            <span class="line"></span>
+                            </span>
+                        </h2>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                            var textWrapper = document.querySelector('.ml16 .letters');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                            anime.timeline({loop: false})
+                            .add({
+                            targets: '.ml16 .line',
+                            scaleX: [0,1],
+                            opacity: [0.5,1],
+                            easing: "easeInOutExpo",
+                            duration: 900
+                            })
+                            .add({
+                            targets: '.ml16 .letter',
+                            opacity: [0,1],
+                            translateX: [40,0],
+                            translateZ: 0,
+                            scaleX: [0.3, 1],
+                            easing: "easeOutExpo",
+                            duration: 800,
+                            offset: '-=600',
+                            delay: (el, i) => 150 + 25 * i
+                            })
+                            .add({
+                            targets: '.ml16',
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                            });
+                        </script>
+                        <p>
+                            <li>Langues : Anglais (intermédiaire), Espagnol (débutant). <br/></li>
+                            <li>Informatique : Utilisation du logiciel Visual studio code, connaissance et pratique du langage Html et Css, <br/> traitement de texte, création de diaporama (OpenOffice)</li>
+                            <li>Secrétariat : Réception d'appels, faire des photocopies, encaissement </li>
+                            <li>Personnelles : Ponctuelle, rigoureuse, attentive, sérieuse, motivée, déterminée</li>
+                        </p>  
+                    </ul>
+                    <ul>
+                        <h2 class="ml17">
+                            <span class="text-wrapper">
+                            <span class="letters">Formations et diplômes</span>
+                            <span class="line"></span>
+                            </span>
+                        </h2>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                            var textWrapper = document.querySelector('.ml17 .letters');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                            anime.timeline({loop: false})
+                            .add({
+                            targets: '.ml17 .line',
+                            scaleX: [0,1],
+                            opacity: [0.5,1],
+                            easing: "easeInOutExpo",
+                            duration: 900
+                            })
+                            .add({
+                            targets: '.ml17 .letter',
+                            opacity: [0,1],
+                            translateX: [40,0],
+                            translateZ: 0,
+                            scaleX: [0.3, 1],
+                            easing: "easeOutExpo",
+                            duration: 800,
+                            offset: '-=600',
+                            delay: (el, i) => 150 + 25 * i
+                            })
+                            .add({
+                            targets: '.ml17',
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                            });
+                        </script>
+                        <p>
+                            <li>2020 : Formation de développeur web et web mobile (en cours)</li>
+                            <li>2017 : Baccalauréat littéraire (obtenu) - Mention bien <br/></li>
+                            <li>2014 : Brevet des collèges (obtenu) - Mention assez bien</li>
+                        </p>
+                    </ul>
+                    <ul>
+                        <h2 class="ml18">
+                        <span class="text-wrapper">
+                        <span class="letters">Centres d'intérêts</span>
+                        <span class="line"></span>
+                        </span>
+                        </h2>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                        <script>
+                            var textWrapper = document.querySelector('.ml18 .letters');
+                            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+                            anime.timeline({loop: false})
+                            .add({
+                            targets: '.ml18 .line',
+                            scaleX: [0,1],
+                            opacity: [0.5,1],
+                            easing: "easeInOutExpo",
+                            duration: 900
+                            })
+                            .add({
+                            targets: '.ml18 .letter',
+                            opacity: [0,1],
+                            translateX: [40,0],
+                            translateZ: 0,
+                            scaleX: [0.3, 1],
+                            easing: "easeOutExpo",
+                            duration: 800,
+                            offset: '-=600',
+                            delay: (el, i) => 150 + 25 * i
+                            })
+                            .add({
+                            targets: '.ml18',
+                            duration: 1000,
+                            easing: "easeOutExpo",
+                            delay: 1000
+                            });
+                        </script>
+                        <p>
+                            <li>Jeux vidéos</li>
+                            <li>Musique</li>
+                            <li>Danse</li>
+                            <li>Chant</li>
+                        </p>
+                    </ul>
+        </div>
+    </div>
+</body>
+</html>
